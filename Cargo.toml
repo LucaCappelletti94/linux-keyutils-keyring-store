@@ -9,19 +9,19 @@ rust-version = "1.85"
 exclude = [".github/"]
 readme = "README.md"
 name = "linux-keyutils-keyring-store"
-version = "0.2.1"
+version = "1.0.0"
 edition = "2024"
 
 [[example]]
 name = "example"
 
 [dependencies]
-keyring-core = { version = "0.7" }
-linux-keyutils = { version = "0.2.4", features = ["std"] }
+keyring-core = { version = "1" }
+linux-keyutils = { version = "0.2", features = ["std"] }
 
 [dev-dependencies]
-fastrand = "2.3"
-rpassword = "7.4"
+fastrand = "2"
+rpassword = "7"
 
 [package.metadata.docs.rs]
 targets = ["x86_64-unknown-linux-gnu"]
