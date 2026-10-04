@@ -16,6 +16,7 @@ jobs:
   publish:
     name: Publish to crates.io
     runs-on: ubuntu-latest
+    environment: release
     needs: ci
     permissions:
       id-token: write
